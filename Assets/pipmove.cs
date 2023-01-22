@@ -21,4 +21,8 @@ public class pipmove : MonoBehaviour
             Destroy(gameObject);
         }
     }
+        public void GameQuit()
+    {
+          Application.Quit();   
+    }
 }
