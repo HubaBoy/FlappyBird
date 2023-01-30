@@ -6,13 +6,16 @@ public class pipspawn : MonoBehaviour
 {
     public GameObject pipe;
     public float spawnRate = 2;
-    private float timer = 0;
+    private  double timer = 0;
     public float heightOffset = 10;
+    public LogicScript logic;
  
     // Start is called before the first frame update
     void Start()
     {
         spawnPipe();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+
     }
  
     // Update is called once per frame
@@ -20,7 +23,7 @@ public class pipspawn : MonoBehaviour
     {
         if (timer < spawnRate)
         {
-            timer = timer + Time.deltaTime;
+            timer = timer + Time.deltaTime+0.0002*logic.playerScore;
         }
         else
         {

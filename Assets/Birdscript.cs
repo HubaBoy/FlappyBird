@@ -8,6 +8,7 @@ public class Birdscript : MonoBehaviour
     public float FlapStrength;
     public LogicScript logic;
     public bool birdlife = true;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Birdscript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) == true && birdlife == true)
         {
-        myRigidbody.velocity = Vector2.up * FlapStrength ;
+        myRigidbody.velocity = Vector2.up * FlapStrength;
         if(transform.position.y>=8.5 || transform.position.y<-9)
         {
              logic.GameOver();
