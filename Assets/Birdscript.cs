@@ -8,7 +8,7 @@ public class Birdscript : MonoBehaviour
     public float FlapStrength;
     public LogicScript logic;
     public bool birdlife = true;
-    
+    public Animator anime;   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,14 +18,16 @@ public class Birdscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //anime.SetBool("Space", true);
         if(Input.GetKeyDown(KeyCode.Space) == true && birdlife == true)
         {
-        myRigidbody.velocity = Vector2.up * FlapStrength;
-        if(transform.position.y>=8.5 || transform.position.y<-9)
-        {
-             logic.GameOver();
-             birdlife=false;
-        }
+            anime.SetTrigger("flapping");
+            myRigidbody.velocity = Vector2.up * FlapStrength;
+            if(transform.position.y>=8.5 || transform.position.y<-9)
+            {
+                logic.GameOver();
+                birdlife=false;
+            }
         }
     }
 
