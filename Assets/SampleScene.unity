@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 1433917079}
   m_Layer: 1
   m_Name: bird
-  m_TagString: Untagged
+  m_TagString: bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,8 +1055,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433917073}
   m_LocalRotation: {x: -0, y: -0, z: 0.00060772616, w: -0.9999999}
-  m_LocalPosition: {x: -6.3586, y: 0.5959, z: 0}
-  m_LocalScale: {x: 6.073183, y: 5.6263475, z: 1}
+  m_LocalPosition: {x: -6.0938, y: 0.4635, z: 0}
+  m_LocalScale: {x: 5.244801, y: 5.2133737, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

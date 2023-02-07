@@ -10,7 +10,7 @@ public class pipemiddlescript : MonoBehaviour
      void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-       bird = GameObject.FindGameObjectWithTag("bird").GetComponent<Birdscript>();
+        bird = GameObject.FindGameObjectWithTag("bird").GetComponent<Birdscript>();
     }
 
     // Update is called once per frame
@@ -21,8 +21,8 @@ public class pipemiddlescript : MonoBehaviour
     }
       private void OnTriggerEnter2D(Collider2D collider)
      {
-        if(bird.birdlife == true
-        ){
+        if(bird.birdlife == true)
+        {
          logic.addScore(1);
         }
   

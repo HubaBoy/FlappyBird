@@ -23,7 +23,7 @@ public class pipspawn : MonoBehaviour
     {
         if (timer < spawnRate)
         {
-            timer = timer + Time.deltaTime+0.0002*logic.playerScore;
+            timer = timer + Time.deltaTime+0.00034*logic.playerScore;
         }
         else
         {
